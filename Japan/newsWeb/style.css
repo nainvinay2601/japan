@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px 100px; */
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+li {
+    display: inline;
+    margin-right: 25px;
+}
+
+button {
+    background-color: aliceblue;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 100px;
+}
+
+.newsTitle {
+    margin-bottom: 50px;
+    font-size: 48px;
+}
+
+.newsFeed {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.sideNewsBar {
+    /* background-color: brown; */
+    /* height: 450px; */
+    width: 300px;
+    height: auto;
+}
+
+.sideNewsDiv {
+    margin-bottom: 30px;
+}
+
+.mainNews {
+    /* height: 650px; */
+    width: 650px;
+    margin-left: 50px;
+}
+
+
+/* .rightSideNews {
+    background-color: brown;
+    height: 450px;
+    width: 300px;
+} */
+
+.sideNewsBar img {
+    width: 300px;
+}
+
+.sideNewsTitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.sideNews {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.mainNewsPhoto {
+    width: 650px;
+}
+
+.mainNewsTitle {
+    font-size: 32px;
+    margin-top: 16px;
+    line-height: 35px;
+    font-weight: 600;
+}
+
+.mainSubNews {
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    /* margin-top: 50px; */
+    /* background-color: #fac115; */
+    padding: 50px;
+}
+
+.footerText {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .sideNewsBar {
+        display: none;
+    }
+    .mainNews {
+        /* height: 650px; */
+        width: 230px;
+        /* margin-left: 50px; */
+    }
+    .mainNewsPhoto {
+        width: 230px;
+    }
+    .news {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+}

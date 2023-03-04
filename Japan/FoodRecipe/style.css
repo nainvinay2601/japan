@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.navBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #feeded;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.heroSection {
+    padding: 30px 150px 30px 150px;
+    background-color: #fac115;
+}
+
+.heroBanner {
+    margin-top: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroTitleSubtitleButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 100vh;
+    width: 100vw;
+}
+
+.heroHeading {
+    font-size: 78px;
+    width: 420px;
+    line-height: 75px;
+    color: black;
+    font-weight: 600;
+}
+
+.heroSubtitle {
+    margin-top: 24px;
+    font-size: 20px;
+}
+
+.heroButtonCTA {
+    border: 3px solid black;
+    background-color: #feeded;
+    width: 240px;
+    color: black;
+    margin-top: 48px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroImage {
+    height: 100vh;
+}
+
+.heroImage img {
+    width: 480px;
+    height: 480px;
+    border-radius: 5px;
+}
+
+.recipeSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    padding: 0px 200px;
+}
+
+.dishHeading {
+    font-size: 38px;
+    font-weight: 600;
+    color: black;
+}
+
+.recipeHeadingAndBanner {
+    height: 100vh;
+}
+
+.recipeSubheadingAndInstructions {
+    height: 100vh;
+    margin-top: 10px;
+}
+
+.dishBanner {
+    margin-top: 30px;
+    border-radius: 2px;
+}
+
+.recipeSubheading {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+    background-color: #fac115;
+}
+
+.instructions {
+    width: 500px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.step {
+    margin-top: 10px;
+}
+
+.stepHead {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ramen {
+    width: 350px;
+    height: 400px;
+    margin-right: 100px;
+}
+
+.sushi {
+    width: 350px;
+    height: 400px;
+    margin-right: 100px;
+}
+
+.udon {
+    width: 350px;
+    height: 350px;
+    margin-right: 100px;
+}
+
+.udonheading {
+    margin-left: 72px;
+}
+
+.sushiheading {
+    margin-right: 210px;
+}
+
+.footer {
+    margin-top: 50px;
+    background-color: #fac115;
+    padding: 100px;
+}
+
+.footerText {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+ 
+
+.sushiButtonSection {
+    margin-top: 60px;
+}
+
+.udonButtonSection {
+    margin-top: 50px;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 768px) {
+    /* styles for devices with a screen width less than or equal to 768px */
+    .sushiRecipeSection {
+        margin-bottom: 300px;
+    }
+    .heroSection {
+        padding: 4px;
+    }
+    .navBar {
+        padding: 40px;
+    }
+    .heroBanner {
+        margin-top: 50px;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .heroTitleSubtitleButton {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        /* height: 100vh; */
+        /* width: 100vw; */
+        /* align-items: start; */
+        height: auto;
+    }
+    .heroHeading {
+        font-size: 48px;
+        width: 320px;
+        line-height: 75px;
+        color: black;
+        font-weight: 600;
+        margin: 40px;
+    }
+    .heroImage {
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+    .heroImage img {
+        width: 320px;
+        border: 0px;
+    }
+    .recipeSection {
+        flex-direction: column;
+        width: auto;
+    }
+    .ramen {
+        width: 300px;
+        margin: 0px;
+    }
+    .sushi {
+        width: 300px;
+        margin: 0px;
+    }
+    .udon {
+        width: 300px;
+        margin: 0px;
+    }
+    .udonheading {
+        margin: 0px;
+    }
+    .instructions {
+        width: 250px;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .recipeSubheading {
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 10px;
+        background-color: #fac115;
+    }
+    .recipeHeadingAndBanner {
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* styles for devices with a screen width between 769px and 992px */
+}
+
+@media only screen and (min-width: 1280px) {
+    .heroImage img {
+        width: 560px;
+        height: 480px;
+        border-radius: 5px;
+    }
+    .heroTitleSubtitleButton {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-top: 100px;
+    }
+}
